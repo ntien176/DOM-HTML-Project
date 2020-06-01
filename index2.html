@@ -17,17 +17,33 @@
         <main id="main">
             <h3 class="title">Books to read</h3>
             <ul>
-                <li class="item"><span>Name of the Wind</span><button class="del-btn">Delete</button></li>
-                <li class="item"><span>The Wise Man's Fear</span><button class="del-btn">Delete</button></li>
-                <li class="item"><span>Kafka on the Shore</span><button class="del-btn">Delete</button></li>
-                <li class="item"><span>The Master and the Margarita</span><button class="del-btn">Delete</button></li>
+                <li class="item"><span>Name of the Wind</span><button class="del-btn btn">Delete</button></li>
+                <li class="item"><span>The Wise Man's Fear</span><button class="del-btn btn">Delete</button></li>
+                <li class="item"><span>Kafka on the Shore</span><button class="del-btn btn">Delete</button></li>
+                <li class="item"><span>The Master and the Margarita</span><button class="del-btn btn">Delete</button></li>
             </ul>
             <label for="hide">
                 <input id="hide" type="checkbox">
                 <span>Hide all books</span>
             </label>
-            <input type="text" placeholder="Add a book...">
-            <button class="add-btn">Add</button>
+            <form class="add-book">
+                <input class="add-input" type="text" placeholder="Add a book...">
+                <button class="add-btn btn">Add</button>    
+            </form>
+            <div class="tabbed-content">
+                <ul class="tabs">
+                    <li class="tab-title">About</li>
+                    <li class="tab-title">Contact</li>
+                </ul>
+                <div id="about">
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Id, corporis?</p>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odit aliquid facilis vel suscipit delectus consequuntur optio inventore repellendus eligendi nihil.</p>
+                </div>
+                <div id="contact">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione, vel.</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum accusantium, magni cumque quidem pariatur eaque sed rerum facere dicta quam?</p>
+                </div>
+            </div>
         </main>
     </div>
 

@@ -4,6 +4,11 @@
 html {
     font-size: 62.5%;
 }
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 body {
     margin: 3rem;
     font-family: 'Tahoma', sans-serif;
@@ -16,7 +21,8 @@ li {
     max-width: 920px;
     margin: 0 auto;
     border: 1px solid rgb(209, 209, 209);
-    border-radius: 2px;
+    border-radius: 2rem;
+    overflow: hidden;
     box-shadow: 0px 1px 6px rgba(0,0,0,0.2);
 }
 #header {
@@ -25,9 +31,13 @@ li {
 }
 #header .title {
     margin: 0;
+    padding: 2rem 0rem;
     font-size: 4rem;
 }
-
+#header input {
+    margin: 1rem 0;
+    padding: 0.5rem 1rem;
+}
 #main {
     margin: 3rem;
 }
@@ -49,7 +59,7 @@ li {
 
 
 }
-.del-btn {
+.btn {
     background-color: var(--primary-color);
     color: rgb(255, 255, 255);
     border: none;
@@ -58,6 +68,42 @@ li {
     outline: none;
     font-size: 1.6rem;
 }
-.del-btn:hover {
+.btn:hover {
     opacity: 0.85;
+}
+label[for="hide"] {
+    display: block;
+    text-align: center;
+}
+.add-book {
+    display: flex;
+    height: 4rem;
+    margin: 1rem;
+    justify-content: center;
+}
+.add-btn {
+    padding: 1rem 2rem;
+    /* margin: 1rem 0; */
+    height: 4rem;
+}
+.add-input {
+    height: 4rem;
+    outline: none;
+    padding: 0.2rem 1rem;
+    min-width: 40rem;
+    /* margin: 1rem 0; */
+}
+.tabs {
+    display: flex;
+    padding-left: 0;
+    margin-bottom: 2rem;
+}
+.tab-title {
+    padding:  .6rem 1rem;
+    margin-left: 1rem;
+    background-color: #CCC;
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+    color: #333;
+    font-size: 1.9rem;
 }
