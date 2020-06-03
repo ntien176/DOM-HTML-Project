@@ -16,7 +16,7 @@
         </header>
         <main id="main">
             <h3 class="title">Books to read</h3>
-            <ul>
+            <ul class="list">
                 <li class="item"><span>Name of the Wind</span><button class="del-btn btn">Delete</button></li>
                 <li class="item"><span>The Wise Man's Fear</span><button class="del-btn btn">Delete</button></li>
                 <li class="item"><span>Kafka on the Shore</span><button class="del-btn btn">Delete</button></li>
@@ -26,21 +26,21 @@
                 <input id="hide" type="checkbox">
                 <span>Hide all books</span>
             </label>
-            <form class="add-book">
-                <input class="add-input" type="text" placeholder="Add a book...">
-                <button class="add-btn btn">Add</button>    
+            <form id="add-book">
+                <input class="add-input" type="text" placeholder="Add a book..." required>
+                <button type="submit" class="add-btn btn">Add</button>    
             </form>
             <div class="tabbed-content">
                 <ul class="tabs">
                     <li class="tab-title">About</li>
                     <li class="tab-title">Contact</li>
                 </ul>
-                <div id="about">
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Id, corporis?</p>
+                <div class="panel active" id="about">
+                    <p>Content for about tab...</p>
                     <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odit aliquid facilis vel suscipit delectus consequuntur optio inventore repellendus eligendi nihil.</p>
                 </div>
-                <div id="contact">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione, vel.</p>
+                <div class="panel" id="contact">
+                    <p>Content for contact tab...</p>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum accusantium, magni cumque quidem pariatur eaque sed rerum facere dicta quam?</p>
                 </div>
             </div>

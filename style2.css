@@ -33,6 +33,7 @@ li {
     margin: 0;
     padding: 2rem 0rem;
     font-size: 4rem;
+    font-weight: 300;
 }
 #header input {
     margin: 1rem 0;
@@ -75,14 +76,14 @@ label[for="hide"] {
     display: block;
     text-align: center;
 }
-.add-book {
+#add-book {
     display: flex;
     height: 4rem;
     margin: 1rem;
     justify-content: center;
 }
 .add-btn {
-    padding: 1rem 2rem;
+    padding: 1rem 3rem;
     /* margin: 1rem 0; */
     height: 4rem;
 }
@@ -106,4 +107,19 @@ label[for="hide"] {
     border-top-left-radius: 5px;
     color: #333;
     font-size: 1.9rem;
+}
+.panel {
+    border: 1px solid rgb(204, 204, 204);
+    border-radius: 4px;
+    padding: 1rem 2rem;
+    line-height: 1.7;
+    display: none;
+    font-size: 1.8rem;
+    color: #555;
+ }
+.active {
+    display: block;
+}
+.add-btn {
+
 }
