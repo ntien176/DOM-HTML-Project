@@ -34,3 +34,12 @@ addBookForm.addEventListener('click', function(e) {
         }
     }
 })
+// Hide list
+const hide = document.querySelector('#hide');
+hide.addEventListener('change', function(e) {
+    if (list.style.display == 'none') {
+        list.style.display = 'block'
+    } else {
+        list.style.display = 'none'
+    };
+})
