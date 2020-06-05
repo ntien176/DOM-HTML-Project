@@ -1,4 +1,5 @@
-//Delete a book
+document.addEventListener('DOMContentLoaded', function(){
+    //Delete a book
 var list = document.querySelector('.list');
 list.addEventListener('click', function(e) {
     if (e.target.className == 'del-btn btn') {
@@ -37,9 +38,41 @@ addBookForm.addEventListener('click', function(e) {
 // Hide list
 const hide = document.querySelector('#hide');
 hide.addEventListener('change', function(e) {
-    if (list.style.display == 'none') {
-        list.style.display = 'block'
+    if (!hide.checked) {
+        list.style.visibility = 'visible'
     } else {
-        list.style.display = 'none'
+        list.style.visibility = 'hidden'
     };
+})
+//Search box
+const search = document.querySelector('#header input');
+const items = list.querySelectorAll('.item span')
+search.addEventListener('keyup', function() {
+    let keyword = search.value.toLowerCase();
+    for (let i = 0; i < items.length; i++) {
+        Array.from(items).forEach(function(e) {
+            let nameBook = e.textContent.toLowerCase();
+            if(nameBook.includes(keyword)) {
+                e.parentElement.style.display = 'flex'
+            } else {
+                e.parentElement.style.display = 'none'
+            }
+        })
+    }
+})
+// Tab content
+const tabs = document.querySelector('.tabs');
+const panels = document.querySelectorAll('.panel');
+tabs.addEventListener('click', function(e){
+    if (e.target.nodeName == 'LI') {
+        const targetPanel = document.querySelector(e.target.dataset.target);
+        panels.forEach(function(panel) {
+            if (panel == targetPanel) {
+                panel.classList.add('active')
+            } else {
+                panel.classList.remove('active')
+            }
+        })
+    }
+})
 })
